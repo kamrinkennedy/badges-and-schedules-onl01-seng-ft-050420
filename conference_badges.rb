@@ -7,6 +7,7 @@ end
 
 
 # Method that takes an array of names and returns array of badge messages
+<<<<<<< HEAD
 def batch_badge_creator(list)
   list.map{|name| "Hello, my name is #{name}."}
 end
@@ -28,4 +29,8 @@ end
 def printer(list)
   batch_badge_creator(list).each {|name| puts name}
   assign_rooms(list).each {|name| puts name}
+=======
+def batch_badge_creator(array)
+  array.map{|name| array[name] = "Hello, my name is #{name}."}
+>>>>>>> 0f051f5ad035bc46733d82a2d10d40b382a33356
 end
